@@ -1,0 +1,13 @@
+<h1 class=text-center>New game!</h1>
+<div class="d-flex justify-content-center">
+  <% @letters.each do |letter| %>
+    <div class="d-inline-flex p-2"><%=letter%></div>
+  <% end %>
+</div>
+<p class="text-center">What is the longest word you can find?</p>
+<form action="/score" method="get" class="mb-3 text-center">
+  <%= hidden_field_tag :letters_array, @letters %>
+  <input type="text" name="score" placeholder="Your word">
+  <input type="submit" value="Play!" class="btn btn-primary">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

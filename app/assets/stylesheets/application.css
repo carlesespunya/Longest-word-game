@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ .p-2 {
+  background-color: rgb(148, 158, 150) !important;
+  margin: 20px !important;
+  font-size: 300% !important;
+  display: block;
+  width: 100px;
+  padding: 50px !important;
+ }
+
+ h1 {
+   margin-top: 50px !important;
+ }
